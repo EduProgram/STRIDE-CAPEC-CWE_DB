@@ -3,6 +3,7 @@ from pymongo import MongoClient
 import re
 
 # Conectar ao MongoDB
+# Certifique-se de substituir 'USUARIO', 'SENHA' e 'CLUSTER' pelos valores corretos
 client = MongoClient('mongodb+srv://USUARIO:SENHA.@CLUSTER.mongodb.net/')
 db = client['stride_capec_db']
 

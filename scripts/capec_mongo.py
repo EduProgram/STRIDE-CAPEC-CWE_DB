@@ -3,7 +3,8 @@ import codecs
 from pymongo import MongoClient
 from bson import ObjectId
 
-# Conectar ao MongoDB
+# Conectar ao MongoDB (alterar as credenciais e o cluster conforme necessário)
+# Certifique-se de substituir 'USUARIO', 'SENHA' e 'CLUSTER' pelos valores corretos
 client = MongoClient('mongodb+srv://USUARIO:SENHA.@CLUSTER.mongodb.net/')
 db = client['capec_database']
 collection = db['attack_patterns']

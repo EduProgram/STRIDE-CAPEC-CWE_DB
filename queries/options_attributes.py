@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 
-# Conectar ao MongoDB
+# Conectar ao MongoDB (alterar as credenciais e o cluster conforme necessário)
+# Certifique-se de substituir 'USUARIO', 'SENHA' e 'CLUSTER' pelos valores corretos
 client = MongoClient('mongodb+srv://USUARIO:SENHA.@CLUSTER.mongodb.net/')
 db_capec = client['capec_database']
 db_cwe = client['cwe_database']
